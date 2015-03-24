@@ -20,7 +20,7 @@ set nocompatible
 " Set the path to the dictionary to be used
 "   Custom dictionaries can be added to the end of the list
 "   ex. let dictionary_path = /usr/share/dict/*,$HOME/.vim/dict/*
-let dictionary_path = /usr/share/dict/*
+let dictionary_path="/usr/share/dict/*"
 set dictionary=dictionary_path
 
 " Enable Omni Completion
