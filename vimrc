@@ -21,6 +21,17 @@ set nocompatible
 " Requires filetype plugin to be turned on
 set omnifunc=syntaxcomplete#Complete
 
+" Set completion system to use the following options
+" (defaults to .,w,b,u,t,i):
+"   .		scan current buffer
+"   w		scan buffers from other windows
+"   b		scan other loaded buffers that are in the buffer list
+"   u		scan the unloaded buffers that are in the buffer list
+"   t		scan tag completiong
+"   i		scan current and included files
+"   kspell	scan the currently active spell checking
+set complete=.,w,b,u,t,i,kspell
+
 " Set completion system to use the longest common text, and always show a menu
 set completeopt=longest,menuone
 
