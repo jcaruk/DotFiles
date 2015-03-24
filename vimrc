@@ -17,6 +17,12 @@ set nocompatible
 "                                                                              "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" Set the path to the dictionary to be used
+"   Custom dictionaries can be added to the end of the list
+"   ex. let dicts = /usr/share/dict/*,$HOME/.vim/dict/*
+let dicts = /usr/share/dict/*
+set dictionary=dicts
+
 " Enable Omni Completion
 " Requires filetype plugin to be turned on
 set omnifunc=syntaxcomplete#Complete
