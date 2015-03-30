@@ -85,6 +85,9 @@ alias mv='mv -i'
 # Setup alias for todo.txt
 alias t='$HOME/Dropbox/todo/todo.sh'
 
+# Alias for Sublime Text
+alias sublime='/Applications/Sublime\ Text\ 2.app/Contents/MacOS/Sublime\ Text\ 2'
+
 
 ################################################################################
 #                                                                              #
