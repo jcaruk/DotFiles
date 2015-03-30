@@ -8,7 +8,7 @@ if [ -f $HOME/.vimrc ]; then
     echo
     cp $HOME/.vimrc{,.bak}
 fi
-curl https://raw.githubusercontent.com/mlangbehn/DotFiles/master/vimrc > $HOME/.vimrc
+curl https://raw.githubusercontent.com/jcaruk/DotFiles/master/vimrc > $HOME/.vimrc
 
 # Check for ~/.zsh, and create if it doesn't
 if [ ! -d $HOME/.zsh ]; then
@@ -27,7 +27,7 @@ if [ -f $HOME/.zsh/_git ]; then
     echo
     cp $HOME/.zsh/_git{,.bak}
 fi
-curl https://raw.githubusercontent.com/mlangbehn/DotFiles/master/zsh/_git > $HOME/.zsh/_git
+curl https://raw.githubusercontent.com/jcaruk/DotFiles/master/zsh/_git > $HOME/.zsh/_git
 
 # Check for existing ~/.zsh/git-prompt.sh and back it up if it exists
 if [ -f $HOME/.zsh/git-prompt.sh ]; then
@@ -37,7 +37,7 @@ if [ -f $HOME/.zsh/git-prompt.sh ]; then
     echo
     cp $HOME/.zsh/git-prompt.sh{,.bak}
 fi
-curl https://raw.githubusercontent.com/mlangbehn/DotFiles/master/zsh/git-prompt.sh > $HOME/.zsh/git-prompt.sh
+curl https://raw.githubusercontent.com/jcaruk/DotFiles/master/zsh/git-prompt.sh > $HOME/.zsh/git-prompt.sh
 
 # Check for existing ~/.zshrc and back it up if it exists
 if [ -f $HOME/.zshrc ]; then
@@ -47,7 +47,7 @@ if [ -f $HOME/.zshrc ]; then
     echo
     cp $HOME/.zshrc{,.bak}
 fi
-curl https://raw.githubusercontent.com/mlangbehn/DotFiles/master/zshrc > $HOME/.zshrc
+curl https://raw.githubusercontent.com/jcaruk/DotFiles/master/zshrc > $HOME/.zshrc
 
 echo
 echo "Installation complete."
