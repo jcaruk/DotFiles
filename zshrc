@@ -76,7 +76,7 @@ alias less='$PAGER'
 # ls should do two things:
 # 	always use color
 # 	always print file sizes in human readable format
-alias ls='ls -h --color=always'
+alias ls='ls -hG'
 
 # mv should prompt before overwriting an existing file
 # Using -f or --force will ignore this option
