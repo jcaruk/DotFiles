@@ -1,4 +1,4 @@
-################################################################################
+cd ../################################################################################
 #                                                                              #
 #                                                                              #
 #                      A Simple zsh Configuration File                         #
@@ -76,7 +76,12 @@ alias less='$PAGER'
 # ls should do two things:
 # 	always use color
 # 	always print file sizes in human readable format
-alias ls='ls -hG'
+# Darwin uses -G for color. Other operating systems use --color=always
+if [[ "$UNAMESTR" == 'Darwin' ]]; then
+    alias ls='ls -ahG'
+else
+    alias ls='ls -h --color=always'
+fi
 
 # mv should prompt before overwriting an existing file
 # Using -f or --force will ignore this option
@@ -86,7 +91,9 @@ alias mv='mv -i'
 alias t='$HOME/Dropbox/todo/todo.sh'
 
 # Alias for Sublime Text
-alias sublime='/Applications/Sublime\ Text\ 2.app/Contents/MacOS/Sublime\ Text\ 2'
+if [ "$UNAMESTR" == 'Darwin' ] && [ -d /Applications/Sublime\ Text\ 2.app ] ;then
+    alias sublime='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
+fi
 
 
 ################################################################################
