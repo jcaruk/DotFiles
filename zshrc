@@ -77,7 +77,7 @@ alias less='$PAGER'
 # 	always use color
 # 	always print file sizes in human readable format
 # Darwin uses -G for color. Other operating systems use --color=always
-if [[ "$UNAMESTR" == 'Darwin' ]]; then
+if [[ "$(uname)" == 'Darwin' ]]; then
     alias ls='ls -ahG'
 else
     alias ls='ls -h --color=always'
