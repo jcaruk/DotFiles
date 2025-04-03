@@ -98,8 +98,8 @@ alias mv='mv -i'
 alias t='$HOME/Dropbox/todo/todo.sh'
 
 # Alias for Sublime Text
-if [[ "$(uname)" == 'Darwin' ]] && [ -d /Applications/Sublime\ Text\ 2.app ] ;then
-    alias sublime='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
+if [[ "$(uname)" == 'Darwin' ]] && [ -d /Applications/Sublime\ Text.app ] ;then
+    alias sublime='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
 fi
 
 
