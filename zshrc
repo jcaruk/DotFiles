@@ -17,6 +17,8 @@
 #       These must be set before they are called, therefore, this section is
 #       before all others.
 
+# Set the environment variable MANPAGER to enable color
+export MANPAGER="/usr/bin/less -R --use-color -Ddg -Du+y"
 # Set the default editor
 export EDITOR=vim
 
@@ -78,7 +80,7 @@ alias less='$PAGER'
 # 	always print file sizes in human readable format
 # Darwin uses -G for color. Other operating systems use --color=always
 if [[ "$(uname)" == 'Darwin' ]]; then
-    alias ls='ls -ahG'
+    alias ls='ls -aleOhG'
 else
     alias ls='ls -h --color=always'
 fi
