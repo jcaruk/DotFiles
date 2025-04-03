@@ -29,6 +29,11 @@ else
     export PAGER=less
 fi
 
+# Puts homebrew binaries at the front of the system PATH in macOS
+if [[ "$(uname)" == 'Darwin' ]]; then
+    export PATH=$(brew --prefix)/bin:$PATH
+fi
+
 # Set function path
 fpath=($HOME/.zsh $fpath)
 
