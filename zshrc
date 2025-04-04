@@ -207,6 +207,11 @@ setopt printexitvalue
 # 5 seconds
 REPORTTIME=5
 
+# Launch Zellij with terminal on macOS if installed
+if [[ "$(uname)" == 'Darwin' ]] && [ -d /opt/homebrew/Cellar/zellij ] ;then
+    eval "$(zellij setup --generate-auto-start zsh)"
+fi
+
 
 ################################################################################
 #                                                                              #
