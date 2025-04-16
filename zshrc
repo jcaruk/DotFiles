@@ -34,6 +34,11 @@ if [[ "$(uname)" == 'Darwin' ]]; then
     export PATH=$(brew --prefix)/bin:$PATH
 fi
 
+# Puts conda binaries at the front of the system PATH in macOS
+if [[ "$(uname)" == 'Darwin' ]]; then
+    export PATH="/opt/homebrew/anaconda3/bin:$PATH"
+fi
+
 # Set function path
 fpath=($HOME/.zsh $fpath)
 
